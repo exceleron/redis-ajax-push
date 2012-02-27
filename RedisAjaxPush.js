@@ -65,7 +65,7 @@ function handleRequest (request, response)
 	});
 
 	if (subsystem != 'task') {
-		global.sendError("Not Found");
+		global.sendError(response, "Not Found");
 		return;
 	}
 
